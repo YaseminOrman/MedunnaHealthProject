@@ -15,8 +15,8 @@ import org.junit.runner.RunWith;
 //        monochrome=true,
         features = "./src/test/resources/features",
         glue = {"stepdefinitions", "hooks"},
-        dryRun = true,
-        tags = "@Appointment_Feature"
+        dryRun = false,
+        tags = "@TC_08A"
 )
 public class Runner {
 }

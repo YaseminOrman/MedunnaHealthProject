@@ -29,4 +29,9 @@ public class US_05_HomePage {
 
     @FindBy(xpath = "//h1")
     public WebElement RegistrationText;
+
+    @FindBy(xpath = "//a[@class='appointment-btn scrollto']")
+    public WebElement makeAppointmentButton;
+
+
 }

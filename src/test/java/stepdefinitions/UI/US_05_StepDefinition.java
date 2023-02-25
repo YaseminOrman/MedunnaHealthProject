@@ -53,7 +53,7 @@ public class US_05_StepDefinition {
     @And("user enter invalid password")
     public void userEnterInvalidPassword() {
         ReusableMethods.waitFor(1);
-        us_05_loginPage.passwordInput.sendKeys("merhaba12345");
+        us_05_loginPage.passwordInput.sendKeys(ConfigReader.getProperty("invalidPassword"));
     }
 
     @Then("verify failed to sign in message displayed on the page")
@@ -68,7 +68,7 @@ public class US_05_StepDefinition {
     @When("user enter invalid username")
     public void userEnterInvalidUsername() {
         ReusableMethods.waitFor(1);
-        us_05_loginPage.userNameInput.sendKeys("HastaBer");
+        us_05_loginPage.userNameInput.sendKeys(ConfigReader.getProperty("invalidUsername"));
 
     }
     @Then("verify remember me option is on the page")
@@ -139,4 +139,5 @@ public class US_05_StepDefinition {
         ReusableMethods.waitFor(2);
         Assert.assertTrue(us_05_homePage.welcomeText.isDisplayed());
     }
+
 }
