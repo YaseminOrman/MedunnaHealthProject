@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="37.824" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Login_Feature" name="TC_07_Verify_There_Is_Cancel_Option_On_The_Page" time="37.596">
+<testsuite name="Cucumber" time="0.971" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="DB_Country_Validation" name="TC_06 Verify Country information" time="0.785">
 <system-out><![CDATA[
-Given user navigate to "https://www.medunna.com/" page......................passed
-When user click on user icon option.........................................passed
-And user click on sign in option............................................passed
-When user enter valid username..............................................passed
-And user enter valid password...............................................passed
-And user click on remember me button........................................passed
-Then verify there is cancel button on the login page........................passed
-And user click on the cancel button.........................................passed
-Then verify user is taken to home page......................................passed
-Then close the application..................................................passed
+Given user connects to the databaseYA.......................................passed
+When user sends the query to getYA "name" column from "country" table.......passed
+Then user verifyYA in "country" table "name" column contains "Belgium"......passed
+Then close the connectionYA.................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -42,6 +42,4 @@ public class US_06_DBStepDefinition {
       DBUtils.closeConnection();
     }
 
-
-
 }
